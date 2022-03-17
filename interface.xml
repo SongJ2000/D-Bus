@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node>
+  <interface name="gdbus.demo">
+
+    <method name="methodSetString">
+      <arg name="input" type="s" direction="in"/>
+      <arg name="response" type="s" direction="out"/>
+    </method>
+    
+    <method name="methodSetDouble">
+      <arg name="input" type="d" direction="in"/>
+      <arg name="response" type="d" direction="out"/>
+    </method>
+    
+    <signal name="signalSendString">
+      <arg name="input" type="s"/>
+    </signal>
+    
+    <signal name="signalSendDouble">
+      <arg name="input" type="d"/>
+    </signal>
+    
+  </interface>
+</node>

@@ -7,9 +7,9 @@
 ### GDbus接口
 GDbus接口是用户根据一定规则自定义的通信接口，其描述在xml文件中，包括方法（method）和信号（signal），通过**gdbus-codegen**工具就可以根据用户编写的xml文件生成接口文件（.c .h）。
 
-命令：`gdbus-codegen --generate-c-code=GDbusInterface interface.xml`，根据interface.xml生成GDbusInterface.c GDbusInterface.h
+命令：`gdbus-codegen --generate-c-code=GDBusInterface interface.xml`，根据interface.xml生成GDBusInterface.c GDBusInterface.h
 
-**GDbusInterface.xml：**
+**GDBusInterface.xml：**
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <node>

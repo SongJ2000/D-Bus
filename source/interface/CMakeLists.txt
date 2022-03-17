@@ -10,3 +10,6 @@ include_directories(../../include)
 add_library(DBusCommInterface SHARED DBusCommInterface.cpp GDBusInterface.c) 
 
 link_directories(DBusCommInterface gio glib gobject)
+
+
+
